@@ -16,7 +16,7 @@ def launchsvc(svc,host,port):
         print ("Service {} not running, starting service at port {} on host {}".format(svc, port, host))
         os.system('python '+ SERVICE_DIR + svc + '.py &')
     else:
-        print ("Service {} running at port {} on host {}".format(svc, port, host))
+        print ("Test Service {} running at port {} on localhost {}".format(svc, port, host))
 
 def walkthrough(section,obj):
     if 'preload' in section:
