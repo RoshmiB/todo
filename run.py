@@ -10,7 +10,7 @@ def checkport(host,port):
 
 def launchsvc(svc,host,port):
     #Check if the service is running or not
-    addr = "localhost:{}".format(port)
+    addr = "ip address of localhost:{}".format(port)
     resp = checkport(host, int(port))
     if resp != 0:
         print ("Service {} not running, starting service at port {} on host {}".format(svc, port, host))
